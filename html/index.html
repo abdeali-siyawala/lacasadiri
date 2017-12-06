@@ -1,0 +1,301 @@
+<!doctype html>
+<html class="no-js" style="height:100%">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--MAin css -->
+    <link rel="stylesheet" href="/assests/css/homepage.css" />
+    <link rel="stylesheet" href="/assests/css/ricerca.css" />
+
+    <!-- carousal-->
+    <link rel="stylesheet" type="text/css" href="/assests/lib/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/assests/lib/slick/slick.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+
+    <!--jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    <!--map  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.js"></script>
+    <script type="text/javascript" src="/assests/lib/dist/maps/jquery.vmap.italy.js" charset="utf-8"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- icon of whatsapp,fb-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- booststrap -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- carousal -->
+    <script type="text/javascript" src="/assests/lib/slick/slick.min.js"></script>
+    <title>Il sito più completo per cercare case di riposo - LaCasadiRiposo.it</title>
+    <meta name="description" content="Il sito più completo per cercare case di riposo o strutture per anziani,informazioni e offerte di lavoro nei settori dei servizi per la terza età">
+    <meta name="keywords" content="casa di riposo,elenco,portale, rsa, aprire anziani,centri diurni,offerte lavoro,assistenza domicilare,strutture, ospizio,anni azzurri, segesta, senior service">
+    <link rel="canonical" href="https://www.lacasadiriposo.it" />
+    <script src="/assests/controller/app.js"></script>
+    <script src="../assests/controller/script.js"></script>
+
+</head>
+
+<body class="body_container col-md-12 p-0 m-0" ng-app="myApp">
+    <!-- navigation -->
+    <nav class="navbar navbar-color">
+        <span class="navbar-text ml-auto ">
+      do you need assistance? write us on
+      <a href="tel:3917582705 ">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp al +393917582705
+      </a>
+    </span>
+    </nav>
+
+    <div class="container-fluid mb-1  p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+            <a class="navbar-brand" style="font-family:Georgia;" href="#">
+                <h2 class="mb-0">
+                    <i>
+            <b>laCasadiRiposo.it</i>
+                    </b>
+                </h2>
+                <small class="mt-0">Il sito più completo per cercare case di riposo e RSA in</small>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" ui-sref="ricerca">Ricerca
+                             </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="#">Promozioni</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#">Fornitori</a>
+                    </li>
+                    <li class="nav-item special">
+
+                        <a class="nav-link text-success " ui-sref="#">Offerte di lavoro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- /navigation -->
+
+    <div ui-view></div>
+
+
+    <!-- footer part -->
+
+    <div class="container-fluid footer_div">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mt-5">
+                    <h1 class="text-white" style="font-family:Georgia;">
+                        <i>lacasadiriposo.it</i>
+                    </h1>
+                    <p class="mt-3 mb-0 text-white">lorem ipsum sola min </p>
+                    <button type="submit" class="btn  btn-lg mx-auto  text-warning mb-3 footer_btn">Send Message</button>
+                    <small class="text-white">
+            <br/>Per qualunque informazione non esitate a scriverci siri cante havana a questo indirizzo e-mail:
+            <span class="text-warning">info@lacasadiriposo.it</span>
+          </small>
+
+                    <div class="row mt-3">
+                        <a href="#" class="fa fa-facebook m-3 social_badge"></a>
+                        <a href="#" class="fa fa-twitter m-3 social_badge"></a>
+                        <a href="#" class="fa fa-linkedin m-3 social_badge"></a>
+                    </div>
+                    <div class="footer_p big_footer">
+                        <small class="text-white mt-5">
+              © 2011-2017
+              <a href="#" class="text-warning ">www.lacasadiriposo.it</a> – P.IVA 08757440964
+            </small>
+                    </div>
+                </div>
+
+                <div class="col-md-7 mt-5 big_footer">
+                    <h2 class="text-white">RICERCA PER REGIONE</h2>
+                    <div class="row">
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <h2 class="text-white"> RICERCA PER PROVINCIA</h2>
+
+                    <a href="#" class="text-white">Torino Vercelli Novara Cuneo Asti Alessandria e Brianza Bolzano Trento Verona Vicenza Belluno Treviso Venezia Padova
+            Rovigo Udine Gorizia Trieste Pordenone Imperia Savona Genova La Spezia Piacenza Parma Reggio Emilia Modena Bologna
+            Ferrara Ravenna Forli-Cesena Rimini Massa e Carrara Lucca Pistoia Firenze Livorno Pisa Arezzo Siena Grosseto
+            Prato Perugia Terni Pesaro e Urbino Ancona Macerata Ascoli Piceno Fermo Viterbo Rieti Roma Latina Frosinone L'Aquila
+            Teramo Pescara Chieti Campobasso Isernia Caserta Benevento Napoli Avellino Salerno Foggia Bari Taranto Brindisi
+            Lecce Barletta-Andria-Trani Potenza Matera Cosenza Catanzaro Reggio Calabria Crotone Vibo Valentia Trapani Palermo
+            Messina Agrigento Caltanissetta Enna Catania Ragusa Siracusa Sassari Nuoro Cagliari Oristano Olbia-Tempio Ogliastra
+            Medio Campidano Carbonia-Iglesias</a>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-7 mt-5 small_footer">
+                    <hr class="black_hr" />
+
+                    <div class="row">
+                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="plus.png">
+
+                        </a>
+                        <h4 class="text-white ml-5">RICERCA PER REGIONE</h4>
+
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="" style="list-style-type: none">
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="black_hr" />
+                    <div class="row">
+                        <a data-toggle="collapse" href="#collapseExampleTwo" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="plus.png">
+
+                        </a>
+                        <h4 class="text-white ml-5">RICERCA PER REGIONE</h4>
+
+                    </div>
+                    <div class="collapse text-white" id="collapseExampleTwo">
+                        Carrara Lucca Pistoia Firenze Livorno Pisa Arezzo Siena Grosseto Prato Perugia Terni Pesaro e Urbino Ancona Macerata Ascoli Piceno Fermo Viterbo Rieti Roma Latina Frosinone L'Aquila Teramo Pescara Chieti Campobasso Isernia Caserta Benevento Napoli Avellino
+                        Salerno Foggia Bari Taranto Brindisi Lecce Barletta-Andria-Trani Potenza Matera Cosenza Catanzaro Reggio Calabria Crotone Vibo Valentia Trapani Palermo Messina Agrigento Caltanissetta Enna Catania Ragusa Siracusa Sassari Nuoro
+                        Cagliari Oristano Olbia-Tempio Ogliastra Medio Campidano Carbonia-Iglesias
+                    </div>
+                    <hr class="black_hr" />
+                    <div class="mt-3 mb-3">
+                        <small class="text-white ">
+                             © 2011-2017
+                               <a href="#" class="text-warning ">www.lacasadiriposo.it</a> – P.IVA 08757440964
+                         </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fixed_banner p-1 fixed-bottom text-center footer">
+        <button type="submit" class="btn  mx-auto mt-4  mb-3 text-white mb-0 form_btn ">MOSRA TUTTE</button>
+
+    </div>
+
+    <!-- /footer part -->
+
+    <!-- <script type="text/javascript" src="script.js">
+    </script> -->
+
+
+</body>
+
+</html>

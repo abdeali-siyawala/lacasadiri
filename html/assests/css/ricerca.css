@@ -1,0 +1,43 @@
+.search_bar {
+    border-color: grey;
+}
+
+.list_img {
+    height: 80px;
+    width: 140px;
+}
+
+.text_size_small {
+    font-size: 13px;
+}
+
+.text_size_medium {
+    font-size: 17px;
+}
+
+.pic {
+    float: left;
+}
+
+.pic_text {
+    float: right;
+}
+
+.row.pink_list_item {
+    background-color: rgb(255, 244, 245);
+}
+
+.list {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .list_img {
+        height: 80px;
+        padding: 10px;
+        width: 100%;
+    }
+    .list {
+        margin-left: 0px;
+    }
+}
