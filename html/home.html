@@ -1,0 +1,911 @@
+<!doctype html>
+<html class="no-js" style="height:100%">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--MAin css -->
+    <link rel="stylesheet" href="/assests/css/homepage.css" />
+
+    <!-- carousal-->
+    <link rel="stylesheet" type="text/css" href="/assests/lib/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/assests/lib/slick/slick.css" />
+
+    <!--jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    <!--map  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.js"></script>
+    <script type="text/javascript" src="/assests/lib/dist/maps/jquery.vmap.italy.js" charset="utf-8"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- icon of whatsapp,fb-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- booststrap -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- carousal -->
+    <script type="text/javascript" src="/assests/lib/slick/slick.min.js"></script>
+    <title>Il sito più completo per cercare case di riposo - LaCasadiRiposo.it</title>
+    <meta name="description" content="Il sito più completo per cercare case di riposo o strutture per anziani,informazioni e offerte di lavoro nei settori dei servizi per la terza età">
+    <meta name="keywords" content="casa di riposo,elenco,portale, rsa, aprire anziani,centri diurni,offerte lavoro,assistenza domicilare,strutture, ospizio,anni azzurri, segesta, senior service">
+    <link rel="canonical" href="https://www.lacasadiriposo.it" />
+    <script src="../assests/controller/script.js"></script>
+
+</head>
+
+<body class="body_container col-md-12 p-0 m-0" ng-app="myApp">
+    <!-- navigation -->
+    <nav class="navbar navbar-color">
+        <span class="navbar-text ml-auto ">
+      do you need assistance? write us on
+      <a href="tel:3917582705 ">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp al +393917582705
+      </a>
+    </span>
+    </nav>
+
+    <div class="container-fluid mb-1  p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+            <a class="navbar-brand" style="font-family:Georgia;" href="#">
+                <h2 class="mb-0">
+                    <i>
+            <b>laCasadiRiposo.it</i>
+                    </b>
+                </h2>
+                <small class="mt-0">Il sito più completo per cercare case di riposo e RSA in</small>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="ricerca.html">Ricerca
+                             </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="#">Promozioni</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#">Fornitori</a>
+                    </li>
+                    <li class="nav-item special">
+
+                        <a class="nav-link text-success " ui-sref="#">Offerte di lavoro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- /navigation -->
+
+    <!-- map and searchbar -->
+    <div class="container-fluid white_container ">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="vmap" style="height:350px;"></div>
+            </div>
+            <div class="col">
+                <p>
+                    <h4>
+                        <b class="text big_footer" style="color:#2EAE98">
+            Utilizza il nostro servizio gratuito per la ricerca di
+            <br/> case di riposo, RSA e servizi domiciliari. Case di riposo / RSA
+          </b>
+                        <b class="text small_footer" style="color:#2EAE98">
+             
+            case di riposo, RSA e servizi domiciliari.
+            </b>
+
+                    </h4>
+                </p>
+                <div class="container">
+                    <form class="form-inline small_footer" role="form">
+                        <div class="form-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-secondary dropdown-toggle bg-white text-success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Casa Di Riposo /RSA </button>
+                                <div class="dropdown-menu mt-3">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control input_text" placeholder="Search for..." style="width:100%" aria-label="Text input with dropdown button">
+                            <span>
+                       <button class="btn btn-secondary  py-3 px-5" type="button" style="background-color:#F29B0E">CARSA</button></span>
+                        </div>
+                    </form>
+                    <div class="input-group big_footer">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-secondary dropdown-toggle bg-white text-success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Casa Di Riposo /RSA
+                        </button>
+                            <div class="dropdown-menu mt-3">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search for..." aria-label="Text input with dropdown button">
+                        <span class="input-group-btn">
+                        <button class="btn btn-secondary  py-3 px-5" type="button"style="background-color:#F29B0E">CARSA</button>
+                      </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br/>
+    </div>
+    <!-- /map and searchbar -->
+
+    <div class="container-fluid body_container mt-1 ">
+        <div class="container pt-4 p-0 " style="background-color:white">
+
+            <!-- first part -->
+
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <div class="media user_div">
+                            <img src="/assests/images/postman.png" class="rounded-circle img-fluid ml-2">
+                            <span>
+              <div class="media-body ml-3">
+                <b>
+                  Case di riposo e RSA in evidenza</b>
+                <br/>
+                <i>
+                  Uno sguardo sulle migliori strutture da nord a sud</i>
+              </div>
+            </span>
+                        </div>
+                        <div class="pl-4">
+                            <div class="row mb-4 ">
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 p-1 ml-0 w3-hover-shadow card_block">
+                                    <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss  jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 ">
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 p-1 ml-0 w3-hover-shadow card_block">
+                                    <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss  jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 ">
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 p-1 ml-0 w3-hover-shadow card_block">
+                                    <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss  jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 ">
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 p-1 ml-0 w3-hover-shadow card_block">
+                                    <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss  jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 ">
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 p-1 ml-0 w3-hover-shadow card_block">
+                                    <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss  jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 ">
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 ml-0 p-1 w3-hover-shadow card_block">
+                                    <img class="card-img-top img-fluid" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss dsnsjd jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 col-md-4 p-1 ml-0 w3-hover-shadow card_block">
+                                    <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <b>dnsdj njdss  jdsn</b><br/>
+
+                                        <small class="card-text">Some quick example text to build on the c's content.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 form_col ml-5 ">
+                        <div>
+                            <!-- form user info -->
+                            <div class="card  mb-3 cards_border ">
+                                <div class="card-header " id="card_head">
+                                    <h3 class="mb-0 text-white">Stai cercando una casa di riposo o una struttura per anziani?</h3>
+                                </div>
+                                <div class="card-block container card_form">
+                                    <p class="container mt-2" style="color:grey;font-size:17px">
+                                        <i>
+                                           Compila il modulo per ricevere gratuitamente tutte le informazioni su costi e servizi dalle strutture della tua zona e trovare la soluzione migliore.
+                                       </i>
+                                    </p>
+                                    <form class="form" role="form" autocomplete="off" style="border:none">
+                                        <fieldset>
+                                            <label for="name2" class="mb-0">
+                                     <b>DOVE STAI CERCANDO</b>
+                    </label>
+                                            <div class="row mb-1">
+                                                <div class="col-lg-12">
+                                                    <input type="text" name="name2" id="name2" placeholder="name" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <label for="email2" class="mb-0">
+                      <b>PER</b>
+                    </label>
+                                            <div class="row mb-1">
+                                                <div class="col-lg-12">
+                                                    <input type="text" name="email2" placeholder="email" id="email2" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <label for="email2" class="mb-0">
+                      <b>DATI CONTATTO</b>
+                    </label>
+
+
+                                            <div class="row my-2">
+                                                <div class="col-lg-12">
+                                                    <input type="text" name="email2" placeholder="Crooswdw" id="email2" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <div class="row my-2">
+                                                <div class="col-lg-12">
+                                                    <input type="text" name="email2" placeholder="LAscadiri" id="email2" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <div class="row my-2">
+                                                <div class="col-lg-12">
+                                                    <input type="text" name="email2" placeholder="LAscadiri" id="email2" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1">
+                                                <div class="col-lg-12">
+                                                    <textarea rows="6" name="message2" placeholder="Message" id="message2" class="form-control" required=""></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row p-3">
+                                                <label class="custom-control custom-checkbox mt-4">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Accettazione della privacy</span>
+                      </label>
+
+                                                <button type="submit" class="btn  btn-lg m-3 text-white  float-right form_btn ">INVIA</button>
+
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /form user info -->
+
+                        </div>
+
+                        <div class="media user_div">
+                            <img src="/assests/images/tag.png" class="rounded-circle img-fluid ml-2" style="width:90px;height:90px">
+                            <span>
+              <div class="media-body ml-3 text_size_16 ">
+                <b>
+                  Promozioni Residenze in Italia</b>
+                <br/> <br/><i>Scopri quali strutture possono offrire prezzi scontati</i>
+              </div>
+            </span>
+                        </div>
+
+                        <div class="card card-outline-danger  mt-3 card_list">
+                            <div class="card-block">
+                                <div class="media m-3 w3-hover-shadow card_list_item">
+                                    <img class="d-flex mr-3 " style="width:90px;height:90px" src="/assests/images/crocodile.jpg" alt="Generic placeholder image">
+                                    <div class="media-body ml-2">
+                                        <h5 class="mt-0 ">
+                                            <b>Rsidanza di maria</b>
+                                        </h5>
+                                        lacinia congue felis in fauc.
+                                        <br/>
+                                        <small class="text-warning"> mada di handppump
+                    <br/>casadi di mapa</small>
+                                    </div>
+                                </div>
+                                <div class="media m-3 w3-hover-shadow card_list_item">
+                                    <img class="d-flex mr-3 " style="width:90px;height:90px" src="/assests/images/crocodile.jpg" alt="Generic placeholder image">
+                                    <div class="media-body ml-2">
+                                        <h5 class="mt-0 ">
+                                            <b>Rsidanza di maria</b>
+                                        </h5>
+                                        lacinia congue felis in fauc.
+                                        <br/>
+                                        <small class="text-warning"> mada di handppump
+                    <br/>casadi di mapa</small>
+                                    </div>
+                                </div>
+                                <div class="media m-3 w3-hover-shadow card_list_item">
+                                    <img class="d-flex mr-3 " style="width:90px;height:90px" src="/assests/images/crocodile.jpg" alt="Generic placeholder image">
+                                    <div class="media-body ml-2">
+                                        <h5 class="mt-0 ">
+                                            <b>Rsidanza di maria</b>
+                                        </h5>
+                                        lacinia congue felis in fauc.
+                                        <br/>
+                                        <small class="text-warning"> mada di handppump
+                    <br/>casadi di mapa</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-lg mx-auto mt-4  text-white mb-2 form_btn " style="width:200px">MOSRA TUTTE</button>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <hr/>
+            </div>
+
+            <!-- /first part -->
+            <!-- second part -->
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="media">
+                            <img src="/assests/images/news.png" class="rounded-circle img-fluid ml-2" style="width:90px;height:90px">
+                            <span>
+              <div class="media-body ml-3">
+                <b>
+                  Case di rip</b>
+                <br/>
+                <i>
+                  Ultime notizie dal mondo dell’assistenza agli anziani</i>
+              </div>
+            </span>
+                        </div>
+                        <div class="row">
+                            <div class="card mt-3 ml-0 col-md-6 w3-hover-shadow card_item">
+                                <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                <div class="card-block">
+
+                                    <p class="card-text">
+                                        <b>Some quick example text to build on the .</b>
+                                        <br/>
+                                        <br/>
+                                        <small class="card-text">lorem ipsum is entenpeneu mada to prison bras get to you r which h is the lacasasafdn fnpqi dpqwdjam
+                    sdiiq dqowinf siqiwwi woqwhdw sdnduao isdjqiwic </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card mt-3 ml-0 col-md-6 w3-hover-shadow card_item">
+                                <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                <div class="card-block">
+
+                                    <p class="card-text">
+                                        <b>Some quick example text to build on the .</b>
+                                        <br/>
+                                        <br/>
+                                        <small class="card-text">lorem ipsum is entenpeneu mada to prison bras get to you r which h is the lacasasafdn fnpqi dpqwdjam
+                    sdiiq dqowinf siqiwwi woqwhdw sdnduao isdjqiwic </small>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="card mt-3 ml-0 col-md-6 w3-hover-shadow card_item">
+                                <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                <div class="card-block">
+
+                                    <p class="card-text">
+                                        <b>Some quick example text to build on the .</b>
+                                        <br/>
+                                        <br/>
+                                        <small class="card-text">lorem ipsum is entenpeneu mada to prison bras get to you r which h is the lacasasafdn fnpqi dpqwdjam
+                    sdiiq dqowinf siqiwwi woqwhdw sdnduao isdjqiwic </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card mt-3 ml-0 col-md-6 w3-hover-shadow card_item">
+                                <img class="card-img-top" src="/assests/images/crocodile.jpg" alt="Card image cap">
+                                <div class="card-block">
+
+                                    <p class="card-text">
+                                        <b>Some quick example text to build on the .</b>
+                                        <br/>
+                                        <br/>
+                                        <small class="card-text">lorem ipsum is entenpeneu mada to prison bras get to you r which h is the lacasasafdn fnpqi dpqwdjam
+                    sdiiq dqowinf siqiwwi woqwhdw sdnduao woldermort isdjqiwic idwich because mi gente mana ki  </small>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-lg ml-5 mt-4  mb-4 text-white form_btn ">MOSRA TUTTE</button>
+
+                    </div>
+                    <div class="col-md-6 ">
+
+
+                        <div id="" class="media">
+                            <img src="/assests/images/i.png" class="rounded-circle img-fluid ml-2" style="width:90px;height:90px">
+                            <span>
+              <div class="media-body ml-3">
+                <b>
+                  Case di za</b>
+                <br/>
+                <i>
+                  Uno sguardo sulle migliori strutture da nord a sud</i>
+              </div>
+            </span>
+                        </div>
+
+                        <div class="card mt-3 borderless">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+
+                            </div>
+                            <button type="submit" class="btn  btn-lg mx-auto mt-4  mb-3 text-white mb-0 form_btn ">MOSRA TUTTE</button>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <br/>
+                <hr/>
+            </div>
+
+            <!-- /second part -->
+            <!-- third or carousal part -->
+
+
+            <div class="container mt-5 white_container  clearfix">
+                <br/>
+                <div class="col-md-4 mx-auto mt-3">
+                    <p class="mx-auto text-center text_size_16">
+                        <b> Con chi lavoriamo?</b>
+                        <i>
+                      <br/> Lavoriamo con le principal settore per farti
+                      <br/> avere tutte le informazioni
+                      <br/>lacasdir sdnajnss bisogno</i></p>
+                </div>
+
+                <div class="carous mb-5">
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                    <div>
+                        <img class="d-block img-fluid mx-auto" src="/assests/images/crocodile.jpg" alt="First slide">
+                    </div>
+                </div>
+
+                <br/>
+            </div>
+            <!--/ third part -->
+
+        </div>
+    </div>
+
+
+    <!-- footer part -->
+
+    <div class="container-fluid footer_div">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mt-5">
+                    <h1 class="text-white" style="font-family:Georgia;">
+                        <i>lacasadiriposo.it</i>
+                    </h1>
+                    <p class="mt-3 mb-0 text-white">lorem ipsum sola min </p>
+                    <button type="submit" class="btn  btn-lg mx-auto  text-warning mb-3 footer_btn">Send Message</button>
+                    <small class="text-white">
+            <br/>Per qualunque informazione non esitate a scriverci siri cante havana a questo indirizzo e-mail:
+            <span class="text-warning">info@lacasadiriposo.it</span>
+          </small>
+
+                    <div class="row mt-3">
+                        <a href="#" class="fa fa-facebook m-3 social_badge"></a>
+                        <a href="#" class="fa fa-twitter m-3 social_badge"></a>
+                        <a href="#" class="fa fa-linkedin m-3 social_badge"></a>
+                    </div>
+                    <div class="footer_p big_footer">
+                        <small class="text-white mt-5">
+              © 2011-2017
+              <a href="#" class="text-warning ">www.lacasadiriposo.it</a> – P.IVA 08757440964
+            </small>
+                    </div>
+                </div>
+
+                <div class="col-md-7 mt-5 big_footer">
+                    <h2 class="text-white">RICERCA PER REGIONE</h2>
+                    <div class="row">
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <h2 class="text-white"> RICERCA PER PROVINCIA</h2>
+
+                    <a href="#" class="text-white">Torino Vercelli Novara Cuneo Asti Alessandria e Brianza Bolzano Trento Verona Vicenza Belluno Treviso Venezia Padova
+            Rovigo Udine Gorizia Trieste Pordenone Imperia Savona Genova La Spezia Piacenza Parma Reggio Emilia Modena Bologna
+            Ferrara Ravenna Forli-Cesena Rimini Massa e Carrara Lucca Pistoia Firenze Livorno Pisa Arezzo Siena Grosseto
+            Prato Perugia Terni Pesaro e Urbino Ancona Macerata Ascoli Piceno Fermo Viterbo Rieti Roma Latina Frosinone L'Aquila
+            Teramo Pescara Chieti Campobasso Isernia Caserta Benevento Napoli Avellino Salerno Foggia Bari Taranto Brindisi
+            Lecce Barletta-Andria-Trani Potenza Matera Cosenza Catanzaro Reggio Calabria Crotone Vibo Valentia Trapani Palermo
+            Messina Agrigento Caltanissetta Enna Catania Ragusa Siracusa Sassari Nuoro Cagliari Oristano Olbia-Tempio Ogliastra
+            Medio Campidano Carbonia-Iglesias</a>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-7 mt-5 small_footer">
+                    <hr class="black_hr" />
+
+                    <div class="row">
+                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="assests/images/plus.png">
+
+                        </a>
+                        <h4 class="text-white ml-5">RICERCA PER REGIONE</h4>
+
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="" style="list-style-type: none">
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="black_hr" />
+                    <div class="row">
+                        <a data-toggle="collapse" href="#collapseExampleTwo" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="assests/images/plus.png">
+
+                        </a>
+                        <h4 class="text-white ml-5">RICERCA PER REGIONE</h4>
+
+                    </div>
+                    <div class="collapse text-white" id="collapseExampleTwo">
+                        Carrara Lucca Pistoia Firenze Livorno Pisa Arezzo Siena Grosseto Prato Perugia Terni Pesaro e Urbino Ancona Macerata Ascoli Piceno Fermo Viterbo Rieti Roma Latina Frosinone L'Aquila Teramo Pescara Chieti Campobasso Isernia Caserta Benevento Napoli Avellino
+                        Salerno Foggia Bari Taranto Brindisi Lecce Barletta-Andria-Trani Potenza Matera Cosenza Catanzaro Reggio Calabria Crotone Vibo Valentia Trapani Palermo Messina Agrigento Caltanissetta Enna Catania Ragusa Siracusa Sassari Nuoro
+                        Cagliari Oristano Olbia-Tempio Ogliastra Medio Campidano Carbonia-Iglesias
+                    </div>
+                    <hr class="black_hr" />
+                    <div class="mt-3 mb-3">
+                        <small class="text-white ">
+                             © 2011-2017
+                               <a href="#" class="text-warning ">www.lacasadiriposo.it</a> – P.IVA 08757440964
+                         </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid small_footer  fixed-bottom fixed_banner text-center footer" id="footer_banner">
+        <button type="submit" class="btn  mx-auto mt-4  mb-3 text-white mb-0 banner_btn ">MOSRA TUTTE</button>
+
+    </div>
+
+    <!-- /footer part -->
+
+    <!-- <script type="text/javascript" src="script.js">
+    </script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+.body_container {
+    background-color: #F2F4F4
+}
+
+.white_container {
+    background-color: #fff;
+}
+
+.text_size_16 {
+    font-size: 18px;
+}
+
+.navbar-color {
+    background-color: #16A085;
+    font-family: Arial;
+    color: #ffffff;
+}
+
+.navbar-color a {
+    color: #ffffff;
+}
+
+.special {
+    border: 1px solid #2EAE98;
+    border-radius: 25px;
+}
+
+.dropdown-menu {
+    box-shadow: 5px 5px 5px grey;
+}
+
+.card_item {
+    width: 16rem;
+}
+
+#card_head {
+    background-color: #13A187;
+}
+
+.card_block {
+    width: 11rem;
+}
+
+.user_div {
+    border-left: 5px solid #F19A1D;
+}
+
+.list-group-item.borderless {
+    border: 0 none;
+}
+
+.card.borderless {
+    border: 0 none;
+}
+
+.user_div img {
+    width: 90px;
+    height: 90px
+}
+
+.btn.form_btn {
+    border: 1px solid #F29B0E;
+    background-color: #EE9B1A;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.card.card_list {
+    border: 2px solid #EE9B1A;
+    background-color: #FEF6E8;
+}
+
+.card_form {
+    background-color: #A3E4D7;
+}
+
+.card_list_item {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.footer_div {
+    background-color: #333333;
+}
+
+.btn.footer_btn {
+    border: 1px solid #F29B0E;
+    background-color: #333333;
+    border-radius: 25px;
+    width: 300px;
+}
+
+.card.cards_border {
+    border: 2px solid #2EAE98;
+}
+
+.footer_btn:hover {
+    background-color: #F29B0E;
+    color: #fff;
+}
+
+.card-block {
+    padding: 8px;
+}
+
+.black_hr {
+    background-color: #000;
+}
+
+.footer_p {
+    margin-top: 130px;
+}
+
+.fa.social_badge {
+    padding: 20px;
+    font-size: 30px;
+    background-color: white;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-whatsapp {
+    background-color: #16A085;
+}
+
+.fixed_banner {
+    display: none;
+}
+
+.small_footer {
+    display: none;
+}
+
+.form-inline.small_footer {
+    display: none;
+}
+
+.fixed_banner {
+    position: fixed;
+    background-color: rgb(24, 138, 115);
+    bottom: 0;
+    left: 0;
+    display: none;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.btn.banner_btn {
+    background-color: #F29B0E;
+    border-radius: 30px;
+    width: 380px;
+    height: 60px;
+}
+
+@media screen and (max-width: 480px) {
+    #vmap {
+        display: none;
+    }
+    .fa.social_badge {
+        padding: 5px;
+        width: 40px;
+    }
+    .form_col {
+        display: none;
+    }
+    .big_footer {
+        display: none;
+    }
+    .card.big_footer {
+        display: none;
+    }
+    .input-group.big_footer {
+        display: none;
+    }
+    .small_footer {
+        display: block;
+    }
+    .form-inline.small_footer {
+        display: block;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .input-group-btn {
+        width: 100%;
+    }
+    .input_text {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .form-group button {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .footer_div {
+        margin-bottom: 100px;
+    }
+}

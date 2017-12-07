@@ -1,0 +1,847 @@
+<!doctype html>
+<html class="no-js" style="height:100%">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--MAin css -->
+    <link rel="stylesheet" href="/assests/css/homepage.css" />
+    <link rel="stylesheet" href="/assests/css/ricerca.css" />
+
+    <!-- carousal-->
+    <link rel="stylesheet" type="text/css" href="/assests/lib/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/assests/lib/slick/slick.css" />
+
+    <!--jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    <!--map  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.js"></script>
+    <script type="text/javascript" src="/assests/lib/dist/maps/jquery.vmap.italy.js" charset="utf-8"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- icon of whatsapp,fb-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- booststrap -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- carousal -->
+    <script type="text/javascript" src="/assests/lib/slick/slick.min.js"></script>
+    <title>Il sito più completo per cercare case di riposo - LaCasadiRiposo.it</title>
+    <meta name="description" content="Il sito più completo per cercare case di riposo o strutture per anziani,informazioni e offerte di lavoro nei settori dei servizi per la terza età">
+    <meta name="keywords" content="casa di riposo,elenco,portale, rsa, aprire anziani,centri diurni,offerte lavoro,assistenza domicilare,strutture, ospizio,anni azzurri, segesta, senior service">
+    <link rel="canonical" href="https://www.lacasadiriposo.it" />
+    <script src="../assests/controller/script.js"></script>
+
+</head>
+
+<body class="body_container col-md-12 p-0 m-0" ng-app="myApp">
+    <!-- navigation -->
+    <nav class="navbar navbar-color">
+        <span class="navbar-text ml-auto ">
+      do you need assistance? write us on
+      <a href="tel:3917582705 ">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp al +393917582705
+      </a>
+    </span>
+    </nav>
+
+    <div class="container-fluid mb-1  p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+            <a class="navbar-brand" style="font-family:Georgia;" href="#">
+                <h2 class="mb-0">
+                    <i>
+            <b>laCasadiRiposo.it</i>
+                    </b>
+                </h2>
+                <small class="mt-0">Il sito più completo per cercare case di riposo e RSA in</small>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" ui-sref="ricerca">Ricerca
+                             </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="#">Promozioni</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " ui-sref="#">Fornitori</a>
+                    </li>
+                    <li class="nav-item special">
+
+                        <a class="nav-link text-success " ui-sref="#">Offerte di lavoro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- /navigation -->
+
+    <div class="container white_container p-0 ">
+        <!-- Search bar -->
+        <header class="pl-5 pr-5 pb-3 pt-3 search_bar ">
+            <div class=" clearfix mb-1">
+                <img src="/assests/images/search.png"><span><small id="text_"> Filtra la tua ricerca</small> </span>
+
+            </div>
+
+
+            <div class="input-group big_footer ">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle bg-white text-success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Casa Di Riposo /RSA
+                        </button>
+                    <div class="dropdown-menu mt-3">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Search for..." aria-label="Text input with dropdown button">
+                <span class="input-group-btn">
+                        <button class="btn btn-secondary  py-3 px-5" type="button"style="background-color:#F29B0E">CARSA</button>
+                      </span>
+            </div>
+        </header>
+        <!--/ Search bar -->
+        <hr/>
+        <!-- first part -->
+
+        <div class="container p-0  body_part">
+            <div class="row p-0 m-0">
+                <div class="col-md-7 p-0 m-0">
+                    <div class="user_div">
+                        <div class="ml-3">
+                            <h6>41 case di riposo in Provincia di Milano</h6>
+                            <i><p>Clicca per conoscere da di queste strutture, troverai il numero di telefono ed il form<br/> per contattarle e ricevere tutte le informazioni gratuitamente e senza impegno.<br/> Se vuoi farti contattare da più strutture, usa il
+                                form sulla destra.</p></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class=" mt-3  list borderless">
+                        <div class="p-2">
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix w3-hover-shadow pink_list_item mt-3 mb-3">
+                                <div class="col-md-3 p-0 pic "><img src="/assests/images/crocodile.jpg" class=" img-fluid list_img ">
+                                </div>
+                                <div class="col-md-9 p-0 pic_text">
+                                    <div class=" ml-3 mt-2 text_size_small">
+                                        <b>Residenza per anziani Rosa Limensis</b>
+                                        <br/>
+                                        <p>
+                                            Siamo un gruppo di persone che hanno avuto modo di occuparsi, in diverse mansioni e per lungo tempo, di attività relative all’assistenza, il coordi..
+                                            <br/><br/><b> Via Podgora 14 - Abbiategrasso (MI)</b> </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 ">
+                    <!-- form user info -->
+                    <div class="card  mb-3 cards_border big_footer">
+                        <div class="card-header " id="card_head">
+                            <h3 class="mb-0 text-white">Cerchi una casa di riposo?</h3>
+                        </div>
+                        <div class="card-block container card_form">
+                            <p class="container mt-2" style="color:grey;font-size:17px">
+                                <i>
+                                                   Compila il modulo per ricevere gratuitamente tutte le informazioni su costi e servizi dalle strutture della tua zona e trovare la soluzione migliore.
+                                               </i>
+                            </p>
+                            <form class="form" role="form" autocomplete="off" style="border:none">
+                                <fieldset>
+                                    <label for="name2" class="mb-0">
+                                             <b>DOVE STAI CERCANDO</b>
+                            </label>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-12">
+                                            <input type="text" name="name2" id="name2" placeholder="name" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <label for="email2" class="mb-0">
+                              <b>PER</b>
+                            </label>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-12">
+                                            <input type="text" name="email2" placeholder="email" id="email2" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <label for="email2" class="mb-0">
+                              <b>DATI CONTATTO</b>
+                            </label>
+
+
+                                    <div class="row my-2">
+                                        <div class="col-lg-12">
+                                            <input type="text" name="email2" placeholder="Crooswdw" id="email2" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-lg-12">
+                                            <input type="text" name="email2" placeholder="LAscadiri" id="email2" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-lg-12">
+                                            <input type="text" name="email2" placeholder="LAscadiri" id="email2" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-12">
+                                            <textarea rows="6" name="message2" placeholder="Message" id="message2" class="form-control" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix mt-3 mb-3">
+                                        <label class="custom-control custom-checkbox  float-left">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description text_size_small">Accettazione della privacy</span>
+                              </label>
+
+                                        <button type="submit" class="btn text-white  float-right form_btn ">INVIA</button>
+
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <!-- /form user info -->
+
+                    </div>
+                    <div>
+                        <div class="card ">
+                            <img class="card-img" src="assests/images/old.jpg" alt="Card image">
+                            <div class="card-img-overlay p-0">
+                                <div class="carous_ricerca ">
+                                    <div>
+                                        <img class="d-block img-fluid mx-auto" src="/assests/images/banner1.jpg" alt="First slide">
+                                    </div>
+                                    <div>
+                                        <img class="d-block img-fluid mx-auto" src="/assests/images/banner1.jpg" alt="First slide">
+                                    </div>
+                                    <div>
+                                        <img class="d-block img-fluid mx-auto" src="/assests/images/banner1.jpg" alt="First slide">
+                                    </div>
+                                    <div>
+                                        <img class="d-block img-fluid mx-auto" src="/assests/images/banner1.jpg" alt="First slide">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-4 ">
+
+
+                        <div id="" class="media">
+                            <img src="/assests/images/i.png" class="rounded-circle img-fluid ml-2" style="width:50px;height:50px">
+                            <span>
+                                      <div class="media-body ml-3">
+                                        <h3><b>
+                                            Info utili</b></h3>
+                               
+                                        <i class="text_size_medium">
+                                            Trova le risposte che cerchi</i>
+                                      </div>
+                                    </span>
+                        </div>
+
+                        <div class="card mt-3 borderless">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item sdnsjdnsa sanasndjas adnsajdnadj dsndajdna qpqkf qwqfqn heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit  sdjiajf ainaions nao p xncacaon non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w3-hover-shadow borderless">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">
+                                            <b>List group item heading</b>
+                                        </h6>
+
+                                    </div>
+                                    <small class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.....</small>
+                                    <br/>
+                                    <br/>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <!-- form user info -->
+                        <div class="card  mb-3 cards_border big_footer">
+                            <div class="card-header " id="card_head">
+                                <h3 class="mb-0 text-white">Cerchi una casa di riposo?</h3>
+                            </div>
+                            <div class="card-block container card_form">
+                                <p class="container mt-2" style="color:grey;font-size:17px">
+                                    <i>
+                                                   Compila il modulo per ricevere gratuitamente tutte le informazioni su costi e servizi dalle strutture della tua zona e trovare la soluzione migliore.
+                                               </i>
+                                </p>
+                                <form class="form" role="form" autocomplete="off" style="border:none">
+                                    <fieldset>
+                                        <label for="name2" class="mb-0">
+                                             <b>DOVE STAI CERCANDO</b>
+                            </label>
+                                        <div class="row mb-1">
+                                            <div class="col-lg-12">
+                                                <input type="text" name="name2" id="name2" placeholder="name" class="form-control" required="">
+                                            </div>
+                                        </div>
+                                        <label for="email2" class="mb-0">
+                              <b>PER</b>
+                            </label>
+                                        <div class="row mb-1">
+                                            <div class="col-lg-12">
+                                                <input type="text" name="email2" placeholder="email" id="email2" class="form-control" required="">
+                                            </div>
+                                        </div>
+                                        <label for="email2" class="mb-0">
+                              <b>DATI CONTATTO</b>
+                            </label>
+
+
+                                        <div class="row my-2">
+                                            <div class="col-lg-12">
+                                                <input type="text" name="email2" placeholder="Crooswdw" id="email2" class="form-control" required="">
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-12">
+                                                <input type="text" name="email2" placeholder="LAscadiri" id="email2" class="form-control" required="">
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-12">
+                                                <input type="text" name="email2" placeholder="LAscadiri" id="email2" class="form-control" required="">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1">
+                                            <div class="col-lg-12">
+                                                <textarea rows="6" name="message2" placeholder="Message" id="message2" class="form-control" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix mt-3 mb-3">
+                                            <label class="custom-control custom-checkbox  float-left">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description text_size_small">Accettazione della privacy</span>
+                              </label>
+
+                                            <button type="submit" class="btn text-white  float-right form_btn ">INVIA</button>
+
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /form user info -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  /First part -->
+
+
+    </div>
+
+
+    <!-- footer part -->
+
+    <div class="container-fluid footer_div">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mt-5">
+                    <h1 class="text-white" style="font-family:Georgia;">
+                        <i>lacasadiriposo.it</i>
+                    </h1>
+                    <p class="mt-3 mb-0 text-white">lorem ipsum sola min </p>
+                    <button type="submit" class="btn  btn-lg mx-auto  text-warning mb-3 footer_btn">Send Message</button>
+                    <small class="text-white">
+            <br/>Per qualunque informazione non esitate a scriverci siri cante havana a questo indirizzo e-mail:
+            <span class="text-warning">info@lacasadiriposo.it</span>
+          </small>
+
+                    <div class="row mt-3">
+                        <a href="#" class="fa fa-facebook m-3 social_badge"></a>
+                        <a href="#" class="fa fa-twitter m-3 social_badge"></a>
+                        <a href="#" class="fa fa-linkedin m-3 social_badge"></a>
+                    </div>
+                    <div class="footer_p big_footer">
+                        <small class="text-white mt-5">
+              © 2011-2017
+              <a href="#" class="text-warning ">www.lacasadiriposo.it</a> – P.IVA 08757440964
+            </small>
+                    </div>
+                </div>
+
+                <div class="col-md-7 mt-5 big_footer">
+                    <h2 class="text-white">RICERCA PER REGIONE</h2>
+                    <div class="row">
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-3">
+                            <ul class="" style="list-style-type: none">
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white">Abruzzo</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <h2 class="text-white"> RICERCA PER PROVINCIA</h2>
+
+                    <a href="#" class="text-white">Torino Vercelli Novara Cuneo Asti Alessandria e Brianza Bolzano Trento Verona Vicenza Belluno Treviso Venezia Padova
+            Rovigo Udine Gorizia Trieste Pordenone Imperia Savona Genova La Spezia Piacenza Parma Reggio Emilia Modena Bologna
+            Ferrara Ravenna Forli-Cesena Rimini Massa e Carrara Lucca Pistoia Firenze Livorno Pisa Arezzo Siena Grosseto
+            Prato Perugia Terni Pesaro e Urbino Ancona Macerata Ascoli Piceno Fermo Viterbo Rieti Roma Latina Frosinone L'Aquila
+            Teramo Pescara Chieti Campobasso Isernia Caserta Benevento Napoli Avellino Salerno Foggia Bari Taranto Brindisi
+            Lecce Barletta-Andria-Trani Potenza Matera Cosenza Catanzaro Reggio Calabria Crotone Vibo Valentia Trapani Palermo
+            Messina Agrigento Caltanissetta Enna Catania Ragusa Siracusa Sassari Nuoro Cagliari Oristano Olbia-Tempio Ogliastra
+            Medio Campidano Carbonia-Iglesias</a>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-7 mt-5 small_footer">
+                    <hr class="black_hr" />
+
+                    <div class="row">
+                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="assests/images/plus.png">
+
+                        </a>
+                        <h4 class="text-white ml-5">RICERCA PER REGIONE</h4>
+
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="" style="list-style-type: none">
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Abruzzo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="black_hr" />
+                    <div class="row">
+                        <a data-toggle="collapse" href="#collapseExampleTwo" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="assests/images/plus.png">
+
+                        </a>
+                        <h4 class="text-white ml-5">RICERCA PER REGIONE</h4>
+
+                    </div>
+                    <div class="collapse text-white" id="collapseExampleTwo">
+                        Carrara Lucca Pistoia Firenze Livorno Pisa Arezzo Siena Grosseto Prato Perugia Terni Pesaro e Urbino Ancona Macerata Ascoli Piceno Fermo Viterbo Rieti Roma Latina Frosinone L'Aquila Teramo Pescara Chieti Campobasso Isernia Caserta Benevento Napoli Avellino
+                        Salerno Foggia Bari Taranto Brindisi Lecce Barletta-Andria-Trani Potenza Matera Cosenza Catanzaro Reggio Calabria Crotone Vibo Valentia Trapani Palermo Messina Agrigento Caltanissetta Enna Catania Ragusa Siracusa Sassari Nuoro
+                        Cagliari Oristano Olbia-Tempio Ogliastra Medio Campidano Carbonia-Iglesias
+                    </div>
+                    <hr class="black_hr" />
+                    <div class="mt-3 mb-3">
+                        <small class="text-white ">
+                             © 2011-2017
+                               <a href="#" class="text-warning ">www.lacasadiriposo.it</a> – P.IVA 08757440964
+                         </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid small_footer p-1 fixed-bottom fixed_banner text-center footer" id="footer_banner">
+        <button type="submit" class="btn  mx-auto mt-4  mb-3 text-white mb-0 banner_btn ">MOSRA TUTTE</button>
+
+    </div>
+
+    <!-- /footer part -->
+
+    <!-- <script type="text/javascript" src="script.js">
+    </script> -->
+
+
+</body>
+
+</html>

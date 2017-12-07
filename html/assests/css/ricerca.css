@@ -1,0 +1,76 @@
+.search_bar {
+    border-color: grey;
+    background-color: white;
+    width: 80%;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 84.3%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.search_bar_text {
+    font-size: 20px;
+    color: green;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.list_img {
+    height: 80px;
+    width: 140px;
+}
+
+.text_size_small {
+    font-size: 13px;
+}
+
+.text_size_medium {
+    font-size: 17px;
+}
+
+.pic {
+    float: left;
+}
+
+.carous_ricerca {
+    margin-top: 240px;
+    height: 40px;
+}
+
+.pic_text {
+    float: right;
+}
+
+.row.pink_list_item {
+    background-color: rgb(255, 244, 245);
+}
+
+.list {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .list_img {
+        height: 80px;
+        padding: 10px;
+        width: 100%;
+    }
+    .list {
+        margin-left: 0px;
+    }
+    .fixed-header {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        box-shadow: 5px 5px 5px grey;
+    }
+    .carous_ricerca {
+        margin-top: 210px;
+        height: 40px;
+    }
+}
